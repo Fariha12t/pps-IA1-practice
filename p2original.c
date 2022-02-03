@@ -27,22 +27,24 @@ int cmp(int a, int b, int c)
 int input()
 {
   int x;
+  printf("enter any number:\n");
   scanf("%d", &x);
   return x;
 }
-void output(int a, int b, int c, int lar)
+void output(int a, int b, int c, int largest)
 {
-   printf("Greatest number among \" %d \t %d \t %d \t %d \n", a , b ,c, lar );
+  printf("%d is the largest of them all\n",largest);
 }
 int main()
 {
-  int a,b,c,large;
-  printf("enter three numbers:\n");
+  int a,b,c,largest;
+ 
   a=input();
   b=input();
   c=input();
-  large=cmp(a,b,c);
-  printf("%d is the largest of them all\n",large);
+  largest=cmp(a,b,c);
+  output(a,b,c,largest);
+ 
   return 0; 
 }
 
