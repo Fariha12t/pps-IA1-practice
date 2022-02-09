@@ -1,9 +1,9 @@
 #include<stdio.h>
-int cmp(int a, int b, int c)
+int cmp(int a, int b ,int c)
 {
   if (a>b)
   {
-    if (a>c)
+    if(a>c)
     {
       return a;
     }
@@ -14,7 +14,7 @@ int cmp(int a, int b, int c)
   }
   else
   {
-    if (b>c)
+    if(b>c)
     {
       return b;
     }
@@ -28,24 +28,21 @@ int input()
 {
   int x;
   printf("enter any number:\n");
-  scanf("%d", &x);
+  scanf("%d" ,&x);
   return x;
 }
 void output(int a, int b, int c, int largest)
 {
-  printf("%d is the largest of them all\n",largest);
+  printf("%d is largest \n",largest);
+
 }
 int main()
 {
   int a,b,c,largest;
- 
   a=input();
   b=input();
   c=input();
   largest=cmp(a,b,c);
   output(a,b,c,largest);
- 
-  return 0; 
+  return 0;
 }
-
-

@@ -38,13 +38,11 @@ void output(int a, int b, int c, int largest)
 int main()
 {
   int a,b,c,largest;
- 
   a=input();
   b=input();
   c=input();
   largest=cmp(a,b,c);
   output(a,b,c,largest);
- 
   return 0; 
 }
 
